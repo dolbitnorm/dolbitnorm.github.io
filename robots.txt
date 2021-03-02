@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin
+Disallow: /img/admin
+Disallow: /support
+Disallow: /index.html
+Disallow: *&
+Host: www.loremschool.ru
+Disallow: www.loremschool.ru
+Allow: /error.html
+
+Sitemap: index.html/sitemap.xml

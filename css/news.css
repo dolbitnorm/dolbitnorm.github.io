@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #b939d3;
+}
+
+.container {
+    padding: 0 150px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 130px;
+    padding: 7px;
+}
+.title{
+    font-size: 1.6rem;
+}
+.news-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: auto;
+    margin: 0 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.news-item-wrap {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-item-text {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.news-item-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.news-item-img {
+    width: 180px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.main{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.date {
+    text-align: right;
+    margin-top: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    margin: 0 auto;
+}
+@media screen and (max-width: 1090px) {
+    .container {
+        max-width: 990px;
+        margin: auto;
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 869px) {
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 0 30px;
+    }
+    .news-item-wrap {
+        width: 33%;
+    }
+
+}
+@media screen and (max-width: 711px) {
+    .container {
+        max-width: 690px;
+        margin: auto;
+        padding: 0 20px;
+    }
+    .news-item-wrap {
+        width: 50%;
+    }
+    .logo h1{
+        display: none;
+    }
+    footer p{
+        font-size: 1.2rem;
+    }
+}
